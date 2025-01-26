@@ -1,0 +1,33 @@
+/* Styles spécifiques au tableau de bord étudiant */
+
+/* Styles hérités du dashboard général */
+@import 'dashboard.css';
+
+/* Styles spécifiques aux étudiants */
+.student-dashboard-header {
+    background-color: #f0f8ff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.student-dashboard-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.student-dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--bs-box-shadow-lg);
+}
+
+/* Media Queries spécifiques si nécessaire */
+@media (max-width: 768px) {
+    .student-dashboard-grid {
+        gap: 1rem;
+    }
+}

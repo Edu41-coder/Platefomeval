@@ -1,0 +1,6 @@
+et modo developpeur ne marchent pas les liens
+Mot de passe oublié 
+eliminar usuario
+register 
+tester creer evaluations...
+tester redirection apres session_expired por tiempo

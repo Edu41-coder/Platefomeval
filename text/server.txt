@@ -1,0 +1,28 @@
+composer dump-autoload
+
+Authentification :
+http://localhost/Plateformeval/auth/login
+http://localhost/Plateformeval/auth/register
+http://localhost/Plateformeval/auth/logout
+http://localhost/Plateformeval/auth/forgot-password
+http://localhost/Plateformeval/auth/reset-password
+
+Gestion des utilisateurs :
+http://localhost/Plateformeval/users          (Liste des utilisateurs)
+http://localhost/Plateformeval/users/create   (Création)
+http://localhost/Plateformeval/users/{id}     (Détails)
+http://localhost/Plateformeval/users/{id}/edit (Modification)
+
+Page d'accueil :
+http://localhost/Plateformeval/
+
+
+marie.dubois@univ-fr.net  
+pierre.lambert@univ-fr.net  
+prof2023
+
+Pour les autres professeurs, utilisez leur email respectif avec le même mot de passe : prof2023
+
+
+
+index, container,web,application,utliser twig pour les templates

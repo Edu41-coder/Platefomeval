@@ -1,0 +1,77 @@
+C:\xampp\htdocs\Plateformeval
+app
+   config
+      consfig.php
+      database.php
+   controllers
+      Auth
+         AuthController.php
+      Evaluation
+         EvaluationController.php
+      Matiere
+         MatiereController.php
+      User
+         UserController.php
+   interfaces
+      Controller
+         ControllerIneterface.php
+      Model
+         ModelInterface.php
+      Repository
+         RepositoryInterface.php
+      Service
+         AutheticationInterface.php
+         EvaluationServiceInterface.php
+   models
+      Entity
+         Evaluation.php
+         Matiere.php
+         Role.php
+         User.php
+      Repository
+         EvaluationRepository.php
+         MatiereRepository.php
+         UserRepository.php
+   services
+      AuthenticationService.php
+      EvaluationService.php
+   views
+      evaluation
+         create.php
+         index.php
+      layouts
+         default.php
+      matieres
+         create.php
+         edit.php
+         index.php
+      users
+         create.php
+         edit.php
+         index.php
+core
+   Controller
+      BaseController.php
+   Database
+      Database.php
+      DatabaseInterface.php
+   Exception
+      AuthenticationException.php
+      DatabaseException.php
+   Model
+      BaseModel.php
+   Router
+      Router.php
+      RouterInterface.php
+public
+   assets
+      css
+      images
+      js
+   .htaccess
+   index.php
+   robots.txt
+.env
+.gitignore
+.htaccess
+

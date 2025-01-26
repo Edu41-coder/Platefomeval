@@ -1,0 +1,7 @@
+peut etre changer les cles apres car:
+Ne jamais utiliser ces clés de développement en production
+Générer des clés sécurisées avant le déploiement
+Désactiver le mode debug en production
+
+JWT_SECRET=dev_secret_987654321
+APP_KEY=dev_key_123456789

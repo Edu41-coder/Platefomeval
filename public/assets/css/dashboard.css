@@ -1,0 +1,169 @@
+/* Dashboard styles */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border: 1px solid var(--bs-border-color);
+    background-color: var(--bs-white);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.card:hover {
+    box-shadow: var(--bs-box-shadow-lg);
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: var(--bs-gray-100);
+    border-bottom: 1px solid var(--bs-border-color);
+    padding: 1.5rem 3rem;
+}
+
+.card-title {
+    color: var(--bs-heading-color);
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.card-body {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    padding-top: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--bs-primary-dark, #357abd);
+    border-color: var(--bs-primary-dark, #357abd);
+}
+
+.btn-secondary {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+    color: var(--bs-white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--bs-secondary-dark, #5a6268);
+    border-color: var(--bs-secondary-dark, #545b62);
+}
+
+/* Dashboard grid */
+.dashboard-grid {
+    display: grid;
+    gap: var(--bs-gutter-x);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: var(--bs-gutter-x, 1rem);
+    }
+    
+    .card {
+        margin-bottom: var(--bs-gutter-y, 1rem);
+    }
+    
+    .row {
+        margin-left: calc(var(--bs-gutter-x) * -0.5);
+        margin-right: calc(var(--bs-gutter-x) * -0.5);
+    }
+    
+    .col-md-6 {
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+    }
+
+    .card-body {
+        min-height: 120px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Card animations and hover effects */
+.hover-animate {
+    transition: transform 0.2s ease-in-out;
+}
+
+.hover-animate:hover {
+    transform: translateY(-5px);
+}
+
+.icon-animate {
+    color: var(--bs-primary);
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-animate:hover .icon-animate.fa-cog {
+    animation: spin 2s linear infinite;
+}
+
+.hover-animate:hover .icon-animate.fa-book {
+    animation: bounce 1s ease infinite;
+}
+
+.hover-animate:hover .icon-animate.fa-chart-bar {
+    animation: beat 1s ease infinite;
+}
+
+.hover-animate:hover .icon-animate.fa-user {
+    animation: pulse 1s ease infinite;
+}
+
+/* Card border style */
+.admin-card {
+    border: 1px solid #dee2e6 !important;
+}
+
+/* Icon animations */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.7; }
+}
+
+.card-text {
+    margin-top: 1.5rem;
+}
+
+.card-body .btn {
+    margin-top: auto;
+}
+
+/* Ajoutez ces styles pour les titres des évaluations étudiants */
+.student-evaluations-title {
+    font-size: 1.2rem !important;  /* Encore plus petit et forcé avec !important */
+    font-weight: 400 !important;   /* Police plus légère */
+    color: #333;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}

@@ -1,0 +1,112 @@
+/* Styles pour la vue des évaluations d'un étudiant */
+
+/* Style du tableau */
+.evaluations-table {
+    width: 100%;
+    max-width: 1200px;  /* Largeur maximale du tableau */
+    margin: 0 auto 2rem auto;  /* Centrer le tableau */
+    border-collapse: collapse;  /* Changé de separate à collapse */
+}
+
+/* En-têtes du tableau */
+.evaluations-table th {
+    padding: 1.5rem 2rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+/* Cellules du tableau */
+.evaluations-table td {
+    padding: 1.5rem 2rem;
+    border: 1px solid #dee2e6;
+    text-align: center;
+}
+
+/* Largeurs des colonnes */
+.evaluations-table th:nth-child(1),
+.evaluations-table td:nth-child(1) {
+    width: 15%;  /* Date */
+}
+
+.evaluations-table th:nth-child(2),
+.evaluations-table td:nth-child(2) {
+    width: 20%;  /* Type */
+}
+
+.evaluations-table th:nth-child(3),
+.evaluations-table td:nth-child(3) {
+    width: 15%;  /* Note */
+}
+
+.evaluations-table th:nth-child(4),
+.evaluations-table td:nth-child(4) {
+    width: 50%;  /* Commentaire */
+}
+
+/* Bouton de retour */
+.return-button {
+    display: block;  /* Pour permettre le centrage */
+    width: fit-content;  /* Pour que le bouton ne prenne que la largeur nécessaire */
+    margin: 2rem auto;  /* Centrage horizontal et marge verticale */
+    padding: 0.75rem 1.5rem;
+    background-color: var(--bs-primary);  /* Couleur bleue de Bootstrap */
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.return-button:hover {
+    background-color: var(--bs-primary-dark, #0056b3);  /* Version plus foncée au hover */
+    color: white;
+    text-decoration: none;
+}
+
+/* Message quand il n'y a pas d'évaluations */
+.no-evaluations {
+    padding: 2rem;
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+/* Titre de la page */
+.student-evaluations-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Ajout d'un effet de hover sur les lignes */
+.evaluations-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Styles pour les en-têtes de tri */
+.evaluations-table th a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.evaluations-table th a:hover {
+    color: var(--bs-primary) !important;
+}
+
+.evaluations-table th i {
+    font-size: 0.8rem;
+}
+
+/* Style pour la pagination */
+.pagination {
+    margin-top: 2rem;
+} 

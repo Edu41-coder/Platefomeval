@@ -1,0 +1,16 @@
+class HomeController extends BaseController
+{
+    public function index()
+    {
+        $siteTitle = $this->data['site_title'];
+
+        return $this->render('home.index', [
+            'pageTitle' => "Accueil - {$siteTitle}",
+            'pageDescription' => 'Tableau de bord de la plateforme d\'évaluation en ligne',
+            'bodyClass' => 'dashboard-page',
+            'additionalCss' => ['/assets/css/dashboard.css'],
+            'scripts' => ['/assets/js/dashboard.js']
+        ]);
+    }
+
+    Le HomeController gère maintenant tous les CSS et scripts nécessaires pour ses vues, comme nous l'avons vu précédemment.

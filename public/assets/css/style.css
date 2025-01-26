@@ -1,0 +1,139 @@
+/* Variables personnalisées (si nécessaire de surcharger Bootstrap) */
+:root {
+    --bs-primary: #4a90e2;
+    --bs-primary-rgb: 74, 144, 226;
+}
+
+/* Password Strength Meter (fonctionnalité spécifique) */
+.password-strength-meter {
+    margin-top: 0.5rem;
+    background-color: var(--bs-gray-200);
+    height: 4px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.strength-0 { background-color: var(--bs-danger); width: 20%; }
+.strength-1 { background-color: var(--bs-warning); width: 40%; }
+.strength-2 { background-color: var(--bs-info); width: 60%; }
+.strength-3 { background-color: var(--bs-success); width: 80%; }
+.strength-4, .strength-5 { background-color: var(--bs-success); width: 100%; }
+
+.strength-text {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--bs-gray-600);
+    margin-top: 0.25rem;
+    text-align: right;
+}
+
+/* Auth Form Specific Styles */
+.auth-container {
+    max-width: 400px;
+    width: 100%;
+    padding: var(--bs-gutter-x);
+}
+
+.auth-form {
+    background: var(--bs-white);
+    padding: 2rem;
+    border-radius: var(--bs-border-radius-lg);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Spinner Animation (si non fourni par Font Awesome) */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+    .auth-form {
+        padding: 1.5rem;
+    }
+}
+
+/* Styles généraux */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+.navbar {
+    padding: 0.8rem 0;
+}
+
+.navbar .container {
+    padding: 0 15px;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+}
+
+.navbar .row {
+    margin: 0;
+}
+
+/* Main content styles */
+main {
+    flex: 1 0 auto;
+    padding: 2rem 0;
+}
+
+/* Footer styles */
+footer {
+    margin-top: auto;
+    padding: 1rem 0;
+}
+
+footer .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer .nav-link {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* Utility classes */
+.w-100 {
+    width: 100% !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--bs-primary);
+        padding: 1rem;
+        z-index: 1000;
+    }
+    
+    footer .nav {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}

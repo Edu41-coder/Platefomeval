@@ -1,0 +1,17 @@
+/* Styles spécifiques à la page d'accueil */
+.dashboard-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    min-height: 200px;
+}
+
+/* Section bienvenue */
+.welcome-section {
+    padding: 4rem 0;
+} 
